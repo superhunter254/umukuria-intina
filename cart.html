@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart - Umukuria Intina Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="cart">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">UMUKURIA INTINA</a>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="cart.html">Cart</a>
+                <a href="admin.html">Admin</a>
+            </nav>
+            <div class="nav-actions" id="authContainer"></div>
+            <div class="nav-actions">
+                <a href="https://wa.me/254115487195" target="_blank" class="btn btn-ghost">Order on WhatsApp</a>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Dark Mode">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section page-header">
+            <div class="container">
+                <span class="eyebrow">Cart</span>
+                <h1>Your Shopping Cart</h1>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container cart-grid">
+                <div class="cart-items" id="cartItems"></div>
+                <aside class="cart-summary">
+                    <div class="summary-card">
+                        <h2>Order Summary</h2>
+                        <div class="summary-line">
+                            <span>Subtotal</span>
+                            <span id="subtotalAmount">KSh 0</span>
+                        </div>
+                        <div class="summary-line">
+                            <span>Delivery Fee</span>
+                            <span id="deliveryAmount">KSh 200</span>
+                        </div>
+                        <div class="summary-line total-line">
+                            <span>Grand Total</span>
+                            <span id="grandTotalAmount">KSh 0</span>
+                        </div>
+                        <button id="checkoutBtn" class="btn btn-primary">Proceed to Checkout</button>
+                        <p class="note">You can also order directly on WhatsApp if you want faster support.</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Umukuria Intina Store</h3>
+                <p>Modern Kuria apparel with a premium cultural touch. Built for desktop and mobile shoppers.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="cart.html">Cart</a>
+                <a href="admin.html">Admin</a>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>WhatsApp: +254 115487195</p>
+                <p>Support for orders, product help, and admin uploads.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Umukuria Intina Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+    <script src="js/cart.js" defer></script>
+    <script src="js/auth.js" defer></script>
+</body>
+</html>

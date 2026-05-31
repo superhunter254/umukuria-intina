@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Umukuria Intina Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="register">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">UMUKURIA INTINA</a>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="cart.html">Cart</a>
+                <a href="admin.html">Admin</a>
+            </nav>
+            <div class="nav-actions" id="authContainer"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section page-header">
+            <div class="container">
+                <span class="eyebrow">Create Account</span>
+                <h1>Join Umukuria Intina</h1>
+                <p>Register now to start shopping and showcase your Kuria pride.</p>
+            </div>
+        </section>
+
+        <section class="section auth-section">
+            <div class="container auth-container">
+                <div class="auth-card">
+                    <h2>Sign Up</h2>
+                    <form id="registerForm">
+                        <label for="fullName">Full Name</label>
+                        <input id="fullName" type="text" placeholder="John Doe" required />
+                        <label for="email">Email Address</label>
+                        <input id="email" type="email" placeholder="you@example.com" required />
+                        <label for="password">Password</label>
+                        <input id="password" type="password" placeholder="••••••••" required />
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input id="confirmPassword" type="password" placeholder="••••••••" required />
+                        <button type="submit" class="btn btn-primary">Create Account</button>
+                    </form>
+                    <p class="auth-footer">Already have an account? <a href="login.html">Login here</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Umukuria Intina Store</h3>
+                <p>Modern Kuria apparel with a premium cultural touch. Built for desktop and mobile shoppers.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="cart.html">Cart</a>
+                <a href="admin.html">Admin</a>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>WhatsApp: +254 700 000 000</p>
+                <p>Support for orders, product help, and admin uploads.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Umukuria Intina Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+    <script src="js/auth.js" defer></script>
+</body>
+</html>

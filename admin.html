@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard - Umukuria Intina Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="admin">
+    <header class="site-header admin-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">UMUKURIA INTINA</a>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="cart.html">Cart</a>
+                <a href="admin.html">Admin</a>
+            </nav>
+            <div class="nav-actions" id="authContainer"></div>
+            <div class="nav-actions">
+                <a href="https://wa.me/254115487195" target="_blank" class="btn btn-ghost">Order on WhatsApp</a>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Dark Mode">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section page-header">
+            <div class="container">
+                <span class="eyebrow">Admin Dashboard</span>
+                <h1>Manage Products, Orders, Customers</h1>
+                <p>Upload new apparel, update stock, and review store performance from your phone or desktop.</p>
+            </div>
+        </section>
+
+        <section class="section dashboard-cards">
+            <div class="container dashboard-grid">
+                <div class="dashboard-card">
+                    <span>Products</span>
+                    <strong id="totalProducts">0</strong>
+                </div>
+                <div class="dashboard-card">
+                    <span>Orders</span>
+                    <strong id="totalOrders">0</strong>
+                </div>
+                <div class="dashboard-card">
+                    <span>Customers</span>
+                    <strong id="totalCustomers">0</strong>
+                </div>
+                <div class="dashboard-card">
+                    <span>Revenue</span>
+                    <strong id="totalRevenue">KSh 0</strong>
+                </div>
+            </div>
+        </section>
+
+        <section class="section admin-panel-grid">
+            <div class="container admin-panel-inner">
+                <div class="admin-card admin-form-card">
+                    <h2>Add / Edit Product</h2>
+                    <form id="productForm">
+                        <input id="productId" type="hidden" />
+                        <label>Product Name</label>
+                        <input id="productName" type="text" required />
+                        <label>Description</label>
+                        <textarea id="productDescription" rows="3" required></textarea>
+                        <label>Price</label>
+                        <input id="productPrice" type="number" min="100" required />
+                        <label>Category</label>
+                        <select id="productCategory">
+                            <option value="T-Shirts">T-Shirts</option>
+                            <option value="Hoodies">Hoodies</option>
+                            <option value="Caps">Caps</option>
+                            <option value="Wristbands">Wristbands</option>
+                        </select>
+                        <label>Stock</label>
+                        <input id="productStock" type="number" min="0" required />
+                        <label>Product Image</label>
+                        <input id="productImageFile" type="file" accept="image/*" />
+                        <input id="productImage" type="url" placeholder="Or use image URL" />
+                        <div class="image-preview" id="imagePreview">
+                            <span class="image-placeholder">No image selected</span>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Save Product</button>
+                            <button id="clearFormBtn" type="button" class="btn btn-secondary">Clear</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="admin-card admin-order-card">
+                    <h2>Order Management</h2>
+                    <div id="orderTableWrapper" class="table-scroll">
+                        <table class="admin-table">
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Customer</th>
+                                    <th>Phone</th>
+                                    <th>Total</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="ordersTable"></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="admin-card admin-products-card">
+                    <h2>Products</h2>
+                    <div id="productList" class="admin-product-list"></div>
+                </div>
+
+                <div class="admin-card admin-customers-card">
+                    <h2>Customers</h2>
+                    <div id="customerList" class="admin-customer-list"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Umukuria Intina Store</h3>
+                <p>Modern Kuria apparel with a premium cultural touch. Built for desktop and mobile shoppers.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="cart.html">Cart</a>
+                <a href="admin.html">Admin</a>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>WhatsApp: +254 115487195</p>
+                <p>Support for orders, product help, and admin uploads.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Umukuria Intina Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+    <script src="js/admin.js" defer></script>
+    <script src="js/auth.js" defer></script>
+</body>
+</html>

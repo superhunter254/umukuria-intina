@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop - Umukuria Intina Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="products">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">UMUKURIA INTINA</a>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="cart.html">Cart</a>
+                <a href="admin.html">Admin</a>
+            </nav>
+            <div class="nav-actions" id="authContainer"></div>
+            <div class="nav-actions">
+                <a href="https://wa.me/254115487195" target="_blank" class="btn btn-ghost">Order on WhatsApp</a>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Dark Mode">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section page-header">
+            <div class="container">
+                <div class="page-header-content">
+                    <div>
+                        <span class="eyebrow">Shop</span>
+                        <h1>Explore Kuria Apparel</h1>
+                        <p>Search by name, category or price and find premium apparel that celebrates your heritage.</p>
+                    </div>
+                    <div class="search-group">
+                        <input id="searchInput" type="search" placeholder="Search products..." />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section filters-section">
+            <div class="container filters-inner">
+                <div class="filter-group">
+                    <label for="categoryFilter">Category</label>
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                        <option value="T-Shirts">T-Shirts</option>
+                        <option value="Hoodies">Hoodies</option>
+                        <option value="Caps">Caps</option>
+                        <option value="Wristbands">Wristbands</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="priceFilter">Max Price</label>
+                    <input id="priceFilter" type="range" min="500" max="6500" step="100" value="6500" />
+                    <span id="priceLabel">KSh 6500</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div id="productCount" class="product-count"></div>
+                <div id="productsGrid" class="product-grid"></div>
+                <div id="noResults" class="empty-state hidden">No products matched your search. Try another keyword or category.</div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Umukuria Intina Store</h3>
+                <p>Modern Kuria apparel with a premium cultural touch. Built for desktop and mobile shoppers.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="cart.html">Cart</a>
+                <a href="admin.html">Admin</a>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>WhatsApp: +254 115487195</p>
+                <p>Support for orders, product help, and admin uploads.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Umukuria Intina Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+    <script src="js/products.js" defer></script>
+    <script src="js/auth.js" defer></script>
+</body>
+</html>

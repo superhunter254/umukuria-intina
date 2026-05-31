@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Umukuria Intina Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="home">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">UMUKURIA INTINA</a>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="cart.html">Cart</a>
+                <a href="admin.html">Admin</a>
+            </nav>
+            <div class="nav-actions" id="authContainer"></div>
+            <div class="nav-actions">
+                <a href="https://wa.me/254115487195" target="_blank" class="btn btn-ghost">Order on WhatsApp</a>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Dark Mode">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section overlay">
+            <div class="container hero-content">
+                <span class="eyebrow">Wear Your Heritage. Show Your Pride.</span>
+                <h1>UMUKURIA INTINA</h1>
+                <p>Celebrate Kuria Heritage Through Fashion. Shop premium T-Shirts, Hoodies, Caps and Wristbands inspired by Kuria pride and culture.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="products.html">Shop Now</a>
+                    <a class="btn btn-secondary" href="#featured">Explore Collections</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="featured">
+            <div class="container section-header">
+                <div>
+                    <span class="eyebrow">Featured</span>
+                    <h2>Featured Products</h2>
+                </div>
+                <a class="text-link" href="products.html">View all</a>
+            </div>
+            <div id="featuredProducts" class="product-grid"></div>
+        </section>
+
+        <section class="section section-alt">
+            <div class="container section-header">
+                <div>
+                    <span class="eyebrow">New Arrivals</span>
+                    <h2>Fresh Kuria Styles</h2>
+                </div>
+                <a class="text-link" href="products.html">Shop new</a>
+            </div>
+            <div id="newArrivals" class="product-grid"></div>
+        </section>
+
+        <section class="section categories-section">
+            <div class="container section-header">
+                <div>
+                    <span class="eyebrow">Categories</span>
+                    <h2>Shop by Category</h2>
+                </div>
+            </div>
+            <div class="category-grid">
+                <a href="products.html?category=T-Shirts" class="category-card">
+                    <span>T-Shirts</span>
+                </a>
+                <a href="products.html?category=Hoodies" class="category-card">
+                    <span>Hoodies</span>
+                </a>
+                <a href="products.html?category=Caps" class="category-card">
+                    <span>Caps</span>
+                </a>
+                <a href="products.html?category=Wristbands" class="category-card">
+                    <span>Wristbands</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="section testimonials-section">
+            <div class="container section-header">
+                <div>
+                    <span class="eyebrow">Testimonials</span>
+                    <h2>What customers love</h2>
+                </div>
+            </div>
+            <div class="testimonial-grid">
+                <article class="testimonial-card">
+                    <p>★★★★★</p>
+                    <p>"The quality is amazing and the Kuria pride designs are so sleek. I wear it everywhere."</p>
+                    <strong>- Ayra</strong>
+                </article>
+                <article class="testimonial-card">
+                    <p>★★★★★</p>
+                    <p>"Fast shipping and excellent customer service. The hoodie feels premium."</p>
+                    <strong>- Lucas</strong>
+                </article>
+                <article class="testimonial-card">
+                    <p>★★★★★</p>
+                    <p>"My whole family loved the T-shirt designs. Perfect gift for Kuria culture fans."</p>
+                    <strong>- Sarah</strong>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Umukuria Intina Store</h3>
+                <p>Modern Kuria apparel with a premium cultural touch. Built for desktop and mobile shoppers.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="cart.html">Cart</a>
+                <a href="admin.html">Admin</a>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>WhatsApp: +254 115487195</p>
+                <p>Support for orders, product help, and admin uploads.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Umukuria Intina Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+    <script src="js/products.js" defer></script>
+    <script src="js/auth.js" defer></script>
+</body>
+</html>

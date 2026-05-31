@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order Confirmation - Umukuria Intina Store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body data-page="orders">
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html">UMUKURIA INTINA</a>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="cart.html">Cart</a>
+                <a href="admin.html">Admin</a>
+            </nav>
+            <div class="nav-actions" id="authContainer"></div>
+            <div class="nav-actions">
+                <a href="https://wa.me/254115487195" target="_blank" class="btn btn-ghost">Order on WhatsApp</a>
+                <button id="themeToggle" class="icon-btn" aria-label="Toggle Dark Mode">🌙</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section page-header">
+            <div class="container">
+                <span class="eyebrow">Order Confirmed</span>
+                <h1>Thank you for your purchase</h1>
+                <p>We have saved your order locally and it is ready for fulfillment.</p>
+            </div>
+        </section>
+
+        <section class="section order-confirmation-card">
+            <div class="container">
+                <div class="order-card">
+                    <h2 id="orderNumber">ORDER #1001</h2>
+                    <div class="order-details-row">
+                        <div>
+                            <strong>Customer</strong>
+                            <p id="orderCustomer">John Doe</p>
+                        </div>
+                        <div>
+                            <strong>Phone</strong>
+                            <p id="orderPhone">07XXXXXXXX</p>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div>
+                        <strong>Items</strong>
+                        <ul id="orderItems"></ul>
+                    </div>
+                    <div class="summary-line total-line">
+                        <span>Total</span>
+                        <span id="orderTotal">KSh 0</span>
+                    </div>
+                    <div class="summary-line status-line">
+                        <span>Status</span>
+                        <span class="status-pill">Pending</span>
+                    </div>
+                    <a class="btn btn-primary" href="products.html">Continue Shopping</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>Umukuria Intina Store</h3>
+                <p>Modern Kuria apparel with a premium cultural touch. Built for desktop and mobile shoppers.</p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="products.html">Shop</a>
+                <a href="cart.html">Cart</a>
+                <a href="admin.html">Admin</a>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>WhatsApp: +254 115487195</p>
+                <p>Support for orders, product help, and admin uploads.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Umukuria Intina Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js" defer></script>
+    <script src="js/cart.js" defer></script>
+    <script src="js/auth.js" defer></script>
+</body>
+</html>
